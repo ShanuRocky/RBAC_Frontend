@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Users from "./pages/User";
 import Roles from "./pages/Roles";
-import NavBar from "./components/Navbar"; // Import NavBar
+import NavBar from "./components/Navbar"; 
 
 function App() {
   return (
