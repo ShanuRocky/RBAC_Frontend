@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import UserTable from "../components/Usertable";
-import "./Users.css"; // Import CSS for styling
+import "./Users.css";
 
 const Users = () => {
     const [users, setUsers] = useState([
@@ -9,7 +9,7 @@ const Users = () => {
         { id: 3, name: "Jane Doe", email: "jane.doe@example.com", roles: ["Admin", "Manager"], status: "Inactive" },
     ]);
 
-    const [searchQuery, setSearchQuery] = useState(""); // State for search query
+    const [searchQuery, setSearchQuery] = useState(""); 
     const [newUser, setNewUser] = useState({ name: "", email: "", roles: "", status: "Active" });
     const [isEditing, setIsEditing] = useState(false);
     const [editingUserId, setEditingUserId] = useState(null);
@@ -113,7 +113,7 @@ const Users = () => {
                 users={filteredUsers}
                 onEdit={handleEdit}
                 onDelete={handleDelete}
-                onSort={handleSort} // Ensure the onSort is passed here
+                onSort={handleSort} 
             />
 
             {/* Modal */}
