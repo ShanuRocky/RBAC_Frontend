@@ -76,14 +76,3 @@ Make sure you have the following installed on your system:
    ```bash
    npm start
 
-**Project Structure**
-rbac-ui/
-├── public/             # Static assets
-├── src/
-│   ├── components/     # Reusable React components (e.g., UserTable, SearchBar)
-│   ├── styles/         # CSS files for styling
-│   ├── App.js          # Main App component
-│   ├── index.js        # Entry point
-├── package.json        # Project configuration and dependencies
-└── README.md           # Documentation
-
