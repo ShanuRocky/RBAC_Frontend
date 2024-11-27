@@ -1,40 +1,89 @@
 # Role-Based Access Control (RBAC) System
 
-This project is a web application implementing **Role-Based Access Control (RBAC)** to manage users, their roles, and permissions. It allows administrators to efficiently manage access control and user information using an intuitive UI.
+This project is a **Role-Based Access Control (RBAC)** system designed to manage users, their roles, and permissions through an intuitive and responsive web interface. The system simplifies user management for applications that require hierarchical role control and efficient access management.
+
+## Project Overview
+
+RBAC is a common security paradigm in software systems, allowing organizations to define roles and permissions for their users. This project enables administrators to perform user operations like adding, editing, and deleting, as well as assigning roles dynamically. The system is optimized for ease of use with features such as sorting, searching, and a clean, responsive UI.
+
+---
 
 ## Features
 
-- **User Management**: Add, edit, and delete users.
-- **Role Management**: Assign roles (e.g., Admin, Editor, Viewer) to users.
-- **Dynamic Sorting**: Sort users by ID, Name, Email, Roles, or Status.
-- **Search Functionality**: Quickly find users by searching their Name, Email, or Roles in real-time.
-- **Responsive UI**: User-friendly design with support for horizontal scrolling.
-- **Action Buttons**: Edit and delete functionality for each user.
+1. **User Management**:
+   - Add, edit, and delete users with just a few clicks.
+
+2. **Role Management**:
+   - Assign roles (e.g., Admin, Editor, Viewer) to users.
+   - Users can have multiple roles displayed in a comma-separated format.
+
+3. **Dynamic Sorting**:
+   - Clickable column headers allow sorting by **ID**, **Name**, **Email**, **Roles**,**Role Name** or **Status**.
+
+4. **Search Functionality**:
+   - Search users dynamically by typing keywords in the search bar.
+   - Filters results in real-time by matching **Name**, **Email**, or **Roles**.
+
+5. **Responsive Design**:
+   - Supports horizontal scrolling for tables on smaller screens.
+   - Ensures usability across devices (desktop, tablet, and mobile).
+   - A **Sidebar** replaces the traditional navbar for better navigation and improved user experience,  especially on smaller devices.
+
+
+6. **Actions**:
+   - Provides **Edit** and **Delete** buttons for each user in the table.
+   - Edit functionality allows modifying user details and roles.
+
+---
 
 ## Tech Stack
 
 - **Frontend**: ReactJS
-- **Styling**: CSS
+- **Styling**: CSS (customized for responsive designs)
+- **Package Management**: npm
+
+---
+
+## Screenshots
+
+> Add relevant screenshots showcasing:
+- The user list with sorting and searching.
+- The Add/Edit user form.
+- The responsive design on smaller devices.
+
+---
 
 ## Getting Started
+ 
+Follow these instructions to set up and run the project on your local machine.
 
 ### Prerequisites
 
 Make sure you have the following installed on your system:
-
 - **Node.js**: `>=16.x`
-- **npm**: `>=8.x` or **yarn`
-- **React**: Installed as part of this project
+- **npm**: `>=8.x` (or use `yarn` as an alternative)
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/rbac-system.git
-   cd rbac-system
+   cd rbac-ui
+2. **Install Dependencies**:
+   ```bash
+   npm install
+3. **Start the Development Server**:
+   ```bash
+   npm start
 
-2. Install dependencies:
-    npm install
+**Project Structure**
+rbac-ui/
+├── public/             # Static assets
+├── src/
+│   ├── components/     # Reusable React components (e.g., UserTable, SearchBar)
+│   ├── styles/         # CSS files for styling
+│   ├── App.js          # Main App component
+│   ├── index.js        # Entry point
+├── package.json        # Project configuration and dependencies
+└── README.md           # Documentation
 
-3. Start the development server:
-    npm start
