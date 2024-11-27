@@ -13,7 +13,6 @@ This project is a web application implementing **Role-Based Access Control (RBAC
 ## Tech Stack
 
 - **Frontend**: ReactJS
-- **Backend**: FastAPI (optional for data storage)
 - **Styling**: CSS
 
 ## Getting Started
