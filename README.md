@@ -44,15 +44,6 @@ RBAC is a common security paradigm in software systems, allowing organizations t
 
 ---
 
-## Screenshots
-
-> Add relevant screenshots showcasing:
-- The user list with sorting and searching.
-- The Add/Edit user form.
-- The responsive design on smaller devices.
-
----
-
 ## Getting Started
  
 Follow these instructions to set up and run the project on your local machine.
