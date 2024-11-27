@@ -1,0 +1,377 @@
+/* General Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 2.5em; /* Increased font size */
+}
+
+/* Add/Edit User Form */
+form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+form h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Increased font size */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+select {
+  max-width: 90%;
+  width: 100%;
+  padding: 14px; /* Increased padding for more comfortable input */
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 20px; /* Increased font size */
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Button Styling */
+button {
+  padding: 12px 24px; /* Increased padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Increased font size */
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button.primary {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #45a049;
+}
+
+button.secondary {
+  background-color: #f44336;
+  color: white;
+}
+
+button.secondary:hover {
+  background-color: #d32f2f;
+}
+
+button.cancel {
+  background-color: #e0e0e0;
+  color: black;
+  cursor: pointer;
+}
+
+button.cancel:hover {
+  background-color: #d6d6d6;
+}
+
+/* User Table */
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Ensures the table doesn't shrink too much */
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 15px 18px; /* Increased padding */
+  text-align: left;
+  font-size: 16px; /* Increased font size */
+}
+
+table th {
+  background-color: #4caf50;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td button {
+  padding: 6px 14px; /* Increased padding */
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Increased font size */
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button.edit {
+  background-color: #ff9800;
+  color: white;
+}
+
+button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #e68900;
+  transform: translateY(-2px);
+}
+
+button.delete:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+}
+
+/* Form Layout */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-content input,
+.modal-content select {
+  margin: 15px 0;
+  width: 100%;
+  padding: 14px; /* Increased padding */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px; /* Increased font size */
+}
+
+.modal-content button {
+  margin: 10px 5px;
+  padding: 12px 24px; /* Increased padding */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px; /* Increased font size */
+  transition: all 0.3s;
+}
+
+.modal-content .primary {
+  background-color: #4caf50;
+  color: white;
+}
+
+.modal-content .primary:hover {
+  background-color: #45a049;
+}
+
+.modal-content .cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.modal-content .cancel:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* General Container */
+  .container {
+    padding: 10px;
+  }
+
+  /* Form Layout */
+  .form-container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Button Styling */
+  button {
+    font-size: 14px; /* Increased font size */
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Header */
+  h1 {
+    font-size: 1.8em; /* Increased font size */
+    margin-bottom: 20px;
+  }
+
+  /* Form Layout */
+  .form-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  /* Button Styling */
+  button {
+    padding: 8px 16px;
+    font-size: 14px; /* Increased font size */
+  }
+
+  /* Input Fields */
+  input[type="text"],
+  input[type="email"],
+  select {
+    padding: 12px; /* Increased padding */
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+/* Wrapper for Horizontal Scrolling */
+.table-wrapper {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  max-width: 100%; /* Ensures the wrapper doesn’t exceed the screen width */
+  margin-top: 20px; /* Optional spacing */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Ensures the table doesn't shrink too much */
+}
+
+.user-table th,
+.user-table td {
+  padding: 15px 18px; /* Increased padding */
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 16px; /* Increased font size */
+}
+
+.user-table th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.search-bar {
+  max-width: 90%;
+  padding: 12px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(194, 21, 21, 0.1);
+}
+
+.search-bar:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.user-table th {
+  cursor: pointer;
+}
+
+.user-table th:hover {
+  background-color: #45a049; /* Highlight effect on hover */
+}

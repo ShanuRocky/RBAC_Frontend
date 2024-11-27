@@ -1,0 +1,130 @@
+/* General Reset to remove any default margin/padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar-links-container {
+    display: flex;
+    gap: 20px;
+    font-size: 1.1em;
+}
+
+/* Navbar link styles */
+.navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.navbar-link:hover {
+    background-color: #444;
+    color: #ddd;
+    transform: scale(1.1); /* Smooth zoom effect */
+}
+
+.active-link {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.1); /* Highlight active link */
+}
+
+/* Mobile Hamburger Icon */
+.hamburger-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Sidebar visibility for mobile */
+@media (max-width: 768px) {
+    .navbar-links-container {
+        display: none; /* Hide links on mobile */
+    }
+
+    .hamburger-icon {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: -250px; /* Initially hidden off-screen (on the right) */
+        height: 100%;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    .sidebar h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 15px;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        transition: color 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+        color: #f1f1f1;
+    }
+
+    /* Lock the body scroll when sidebar is open */
+    body.sidebar-open {
+        overflow: hidden; /* Prevent page scroll */
+    }
+
+    /* Adjust sidebar when open */
+    body.sidebar-open .sidebar {
+        right: 0; /* Sidebar should be fixed to the right side */
+    }
+
+    /* Prevent content shift when sidebar is open */
+    .content {
+        overflow: hidden; /* Prevent content from shifting when sidebar is open */
+    }
+}
+
+/* Ensures the sidebar is hidden on larger screens */
+@media (min-width: 769px) {
+    .sidebar {
+        display: none; /* Hide the sidebar on larger screens */
+    }
+}
