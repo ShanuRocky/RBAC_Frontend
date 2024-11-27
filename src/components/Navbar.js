@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Sidebar from "./Sidebar"; // Import Sidebar component
+import Sidebar from "./Sidebar";
 import "./Navbar.css";
 
 const Navbar = () => {
