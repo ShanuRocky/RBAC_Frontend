@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./RolePermissions.css"; // Import CSS for styling
+import "./RolePermissions.css"; 
 
 const RolePermissions = () => {
   const [roles, setRoles] = useState([
@@ -41,14 +41,14 @@ const RolePermissions = () => {
     }
 
     setNewRole({ name: "", permissions: "" });
-    setIsModalOpen(false); // Close the modal
+    setIsModalOpen(false); 
   };
 
   const handleEditRole = (role) => {
     setIsEditing(true);
     setEditingRoleId(role.id);
     setNewRole({ name: role.name, permissions: role.permissions.join(", ") });
-    setIsModalOpen(true); // Open the modal
+    setIsModalOpen(true);
   };
 
   const handleDeleteRole = (id) => {
