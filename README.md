@@ -6,7 +6,8 @@ This project is a web application implementing **Role-Based Access Control (RBAC
 
 - **User Management**: Add, edit, and delete users.
 - **Role Management**: Assign roles (e.g., Admin, Editor, Viewer) to users.
-- **Dynamic Sorting**: Sort users by ID, Name, Email, Roles, or Status with ascending/descending indicators.
+- **Dynamic Sorting**: Sort users by ID, Name, Email, Roles, or Status.
+- **Search Functionality**: Quickly find users by searching their Name, Email, or Roles in real-time.
 - **Responsive UI**: User-friendly design with support for horizontal scrolling.
 - **Action Buttons**: Edit and delete functionality for each user.
 
